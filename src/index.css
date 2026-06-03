@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Open Sans", ui-sans-serif, system-ui, sans-serif;
+  
+  /* Configuración del tema personalizado de VideoUSM según especificación del sistema */
+  --color-primary: #46596c;
+  --color-primary-hover: #36495b;
+  --color-primary-container: #5e7185;
+  --color-primary-container-hover: #4d5f72;
+  --color-on-background: #181c20;
+  --color-on-surface: #181c20;
+  --color-background: #f7f9ff;
+  --color-surface: #f7f9ff;
+  
+  /* Containers background colors */
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f1f4f9;
+  --color-surface-container: #ebeef3;
+  --color-surface-container-high: #e5e8ee;
+  --color-surface-container-highest: #e0e3e8;
+  
+  /* Text and details status variants */
+  --color-on-surface-variant: #43474c;
+  --color-outline-variant: #c4c7cd;
+  --color-chip-bg: #e0e3e8;
+  --color-chip-text: #43474c;
+
+  --animate-fade-in: fade-in 0.3s ease-out;
+  --animate-scale-in: scale-in 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scale-in {
+  from { transform: scale(0.95); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+html, body {
+  font-family: var(--font-sans);
+  background-color: #f7f9ff;
+  color: #181c20;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f4f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c4c7cd;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a9adb5;
+}

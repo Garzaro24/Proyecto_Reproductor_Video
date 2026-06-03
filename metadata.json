@@ -1,0 +1,6 @@
+{
+  "name": "VideoUSM",
+  "description": "Plataforma profesional de colaboración de video. Sube, revisa, reproduce y agrega comentarios de retroalimentación con marcas de tiempo a los videos directamente en un espacio de trabajo interactivo de alta fidelidad.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
