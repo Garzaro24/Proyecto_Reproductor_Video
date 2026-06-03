@@ -293,7 +293,7 @@ export default function App() {
           </div>
 
           <div className="text-xs text-slate-400">
-            &copy; 2026 VideoUSM. Creado para creadores.
+            &copy; 2026 Universidad Santa Maria. Cesar Garzaro.
           </div>
         </div>
       </footer>
